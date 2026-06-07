@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Task Manager Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="loginPage">
+    <div class="loginBox">
+        <h1>Welcome 👋</h1>
+        <p>Enter your name to continue</p>
+        <input id="username" placeholder="Your Name">
+        <button onclick="login()">Start</button>
+    </div>
+</div>
+
+<!-- APP -->
+<div id="app">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>📌 STM</h2>
+
+    <button onclick="openPage('dashboard')">🏠 Dashboard</button>
+    <button onclick="openPage('tasks')">📝 Tasks</button>
+    <button onclick="openPage('goals')">🎯 Goals</button>
+    <button onclick="openPage('reminders')">⏰ Reminders</button>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+    <h2 id="welcomeText"></h2>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="page show"></div>
+
+    <!-- TASKS -->
+    <div id="tasks" class="page">
+        <h2>Tasks</h2>
+        <input id="taskInput" placeholder="Enter task">
+        <button onclick="addTask()">Add</button>
+        <div id="taskList"></div>
+    </div>
+
+    <!-- GOALS -->
+    <div id="goals" class="page">
+        <h2>Goals</h2>
+        <input id="goalInput" placeholder="Add goal">
+        <button onclick="addGoal()">Add</button>
+        <div id="goalList"></div>
+    </div>
+
+    <!-- REMINDERS -->
+    <div id="reminders" class="page">
+        <h2>Reminders</h2>
+        <input id="reminderInput" placeholder="Reminder">
+        <button onclick="addReminder()">Add</button>
+        <div id="reminderList"></div>
+    </div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

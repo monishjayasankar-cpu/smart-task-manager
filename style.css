@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+/* LOGIN */
+#loginPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBox {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+}
+
+/* APP */
+#app {
+    display: none;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    background: #111827;
+    padding: 20px;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    background: #1f2937;
+}
+
+/* MAIN */
+.main {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+/* PAGES */
+.page {
+    display: none;
+    animation: fade 0.3s ease;
+}
+
+.show {
+    display: block;
+}
+
+@keyframes fade {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* CARDS */
+.card {
+    background: #1e293b;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+}
+
+/* TASK */
+.task {
+    display: flex;
+    justify-content: space-between;
+    background: #1e293b;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* CONFETTI */
+.confetti {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    top: 0;
+    animation: fall 2s linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
